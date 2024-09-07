@@ -22,7 +22,7 @@ class CLIView:
 
     def display_top_panel(self) -> None:
         top_panel = 1 + PADDING_TOP
-        title_text = f"{term.purple}Game of Life{term.normal}: {term.italic}{self.pattern.name}{term.normal}"
+        title_text = f"{term.green}Game of Life{term.normal}: {term.italic}{self.pattern.name}{term.normal}"
         print(term.move_y(top_panel) + term.center(title_text))
         print("⎯" * term.width)
 
